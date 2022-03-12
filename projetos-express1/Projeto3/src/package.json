@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./index.js localhost 8081"
   },
-  "keywords": [],
-  "author": "Eduardo",
+  "keywords": ["Node", "Express", "dotenv", "mongoose", "cors"],
+  "author": "Carlos Eduardo",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",

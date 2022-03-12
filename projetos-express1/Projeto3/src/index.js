@@ -34,7 +34,13 @@ app.get('/', (req, res)=>{
     });
 });
 
-app.listen(8081, console.log("Funcionando na porta 8081"))
+const server = app.listen(8081,()=>{
+//Endereço completo http://localhost:8081
+    const host = server.address().address //endereco http://localhost
+    const port = server.address().port //Porta 8081 
+
+    console.log(`Seu servidor está funcionado na porta ${port} e no endereço ${host}`);
+})
 
 // const DB_USER = process.env.DB_USER
 // const DB_PASSWORD = encodeURIComponent(process.env.DB_PASSWORD)
